@@ -5,8 +5,15 @@
     flex-direction: row;
     min-width: 90vw;
     overflow-x: scroll;
+    background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+        rgba(139, 152, 255, 0.4), 
+        rgba(0, 110, 255, 0.5)
+    );
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
+    
 
     &::-webkit-scrollbar {
         display: none; /* for Chrome, Safari, and Opera */
@@ -19,6 +26,8 @@
     }
 
     .countries-list {
+        
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -52,4 +61,15 @@
     .list-container{
         width: 10rem;
     }
+
+    .countries-list{
+        background:
+                  /* top, transparent black, faked with gradient */ 
+                  linear-gradient(
+                    rgba(139, 152, 255, 0.4), 
+                    rgba(0, 110, 255, 0.5)
+                  ),
+                  /* bottom, image */
+                
+              }
 } 
